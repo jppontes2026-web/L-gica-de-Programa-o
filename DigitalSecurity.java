@@ -87,13 +87,10 @@ public class DigitalSecurity {
 
     public static void privacidade(Scanner sc) {
 
-        int opcao;
-        
-        do {
-        System.out.println("\n===== PRIVACIDADE NA INTERNET ====="); 
+        int opcao = -1;
+        while (opcao != 0) {
 
-
-
+	 System.out.println("\n===== PRIVACIDADE NA INTERNET ====="); 
        
         System.out.println("1 - Senhas");
         System.out.println("2 - Autenticação");
@@ -101,14 +98,14 @@ public class DigitalSecurity {
         System.out.println("4 - Atualização de software");
         System.out.println("0 - Voltar");
 
-        opcao = sc.nextInt();
-        sc.nextLine();
+		opcao = sc.nextInt();
+		sc.nextLine();
 
         switch (opcao) {
 
             case 1 -> {
                 System.out.println("\nUse senhas diferentes para cada conta.");
-                System.out.println("\n2aperte ENTER para voltar....");
+                System.out.println("\naperte ENTER para voltar....");
                         sc.nextLine();}
 
             case 2 -> {
@@ -128,9 +125,9 @@ public class DigitalSecurity {
             System.out.println("\naperte ENTER para voltar....");
                         sc.nextLine();}
         }
+}
+	}
 
-        } while (opcao !=0);
-        }
        
 
 
